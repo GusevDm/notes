@@ -90,13 +90,6 @@ a {
   bottom: 0;
   left: 0;
 }
-@media all and (orientation: landscape) {
-  .wrapper-img .back {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-  }
-}
 .wrapper-img .back--on {
   display: inline-block;
 }
@@ -168,7 +161,7 @@ a {
 .title {
   text-align: center;
   font-size: 28px;
-  color: rgba(219, 4, 4, 0.83);
+  color: #9f484c;
 }
 .title--p {
   font-size: 18px;
@@ -186,7 +179,7 @@ a {
 .notes__title {
   padding-top: 20px;
   font-size: 20px;
-  color: rgba(219, 4, 4, 0.83);
+  color: #9f484c;
 }
 .notes__item {
   margin-top: 10px;
