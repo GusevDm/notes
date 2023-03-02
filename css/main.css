@@ -90,6 +90,13 @@ a {
   bottom: 0;
   left: 0;
 }
+@media all and (orientation: landscape) {
+  .wrapper-img .back {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+  }
+}
 .wrapper-img .back--on {
   display: inline-block;
 }
@@ -122,7 +129,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #cd0000;
+  background: #9f484c;
   font-size: 18px;
   padding: 20px 12%;
   width: 100%;
