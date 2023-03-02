@@ -10,16 +10,6 @@ html {
   font-size: 18px;
   height: 100%;
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 16px;
-  }
-}
 
 body {
   font-family: "calibri", sans-serif;
@@ -128,6 +118,11 @@ a {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .menu {
+    padding: 20px 16px;
+  }
+}
 .menu__list {
   width: 100%;
   display: -webkit-box;
@@ -137,11 +132,24 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+@media screen and (max-width: 480px) {
+  .menu__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .menu__item {
   padding: 0 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+@media screen and (max-width: 480px) {
+  .menu__item {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
 }
 .menu__link {
   text-decoration: none;
@@ -177,12 +185,12 @@ a {
   padding-bottom: 20px;
 }
 .notes__title {
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 20px;
   color: #9f484c;
 }
 .notes__item {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .notes--active {
   display: block;
@@ -258,7 +266,7 @@ a {
   width: 100%;
   text-align: center;
   background: #c7c7c7;
-  padding: 10px;
+  padding: 20px;
 }
 
 .view {
@@ -317,6 +325,10 @@ button.view__button--active {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15px;
+  list-style: none;
+}
+.links__item a {
+  text-decoration: none;
 }
 .links .links__link {
   font-weight: 300;
@@ -332,6 +344,7 @@ button.view__button--active {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  text-decoration: underline;
 }
 .links .links__link::before {
   content: "";

@@ -9,17 +9,28 @@
     width: 100%;
     text-align: center;
 
+    @media screen and (max-width: $phones) {
+        padding: 20px 16px;
+    }
     
     
     &__list {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+
+        @media screen and (max-width: $phones) {
+            justify-content: space-around;
+        }
     }
 
     &__item {
         padding: 0 10px;
         flex: 1;
+
+        @media screen and (max-width: $phones) {
+            flex: auto;
+        }
     }
 
     &__link {
