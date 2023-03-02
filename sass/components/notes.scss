@@ -7,6 +7,10 @@
         padding-top: 30px;
         font-size: 20px;
         color: $color-title;
+
+        :first-child {
+            padding-top: 20px;
+        }
     }
 
     &__item {

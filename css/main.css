@@ -189,6 +189,9 @@ a {
   font-size: 20px;
   color: #9f484c;
 }
+.notes__title :first-child {
+  padding-top: 20px;
+}
 .notes__item {
   margin-top: 12px;
 }
