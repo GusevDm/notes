@@ -37,6 +37,7 @@ read.click(e => {
     wrapper.addClass('wrapper--none');
     back.addClass('back--on');
     wrapperImg.addClass('wrapper-img--on');
+    window.scrollTo(0, 0);
 });
 
 back.click(e => {
@@ -45,4 +46,17 @@ back.click(e => {
     wrapper.removeClass('wrapper--none');
     back.removeClass('back--on');
     wrapperImg.removeClass('wrapper-img--on');
+});
+
+
+
+
+$('.open').click(e => {
+    if ($('.open').is(':checked')){
+        console.log('Включен');
+        $('details').attr('open', '');
+    } else {
+        console.log('Выключен');
+        $('details').removeAttr('open', '');
+    }    
 });

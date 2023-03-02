@@ -32,23 +32,38 @@
                 <button class="view__button view__button-posled">Последование</button>
             </nav>
 
+            <div class="open-lists">
+                <input type="checkbox" name="open" class="open" id="open"> <label for="open" class="open-for">Открыть списки</label>
+            </div>
+            
             <div class="notes notes-list notes--active">
                 <h2 class="notes__title">Литургия</h2>
                 <ul class="list">
                     <li class="notes__item">
-                        <a href="./page.html" class="notes__link">Первый изобразительный антифон.</a> Архимандрит Матфей (Мормыль)
+                        <details class="op">
+                            <summary>Первый антифон</summary>
+                            <div class="cont-links">
+                                <a href="./page.html" class="notes__link">Первый изобразительный антифон.</a> Архимандрит Матфей (Мормыль)
+                                <a href="#" class="notes__link">Антифон 1. Глас 1</a>
+                            </div>
+                        </details>
                     </li>
                     <li class="notes__item">
-                        <a href="#" class="notes__link">Антифон 1. Глас 1</a>
+                        <details>
+                            <summary>Второй антифон</summary>
+                            <div class="cont-links">
+                                <a href="#" class="notes__link">Второй изобразительный антифон</a>
+                                <a href="#" class="notes__link">Антифон 2. Глас 1</a>
+                            </div>
+                        </details>
                     </li>
                     <li class="notes__item">
-                        <a href="#" class="notes__link">Второй изобразительный антифон</a>
-                    </li>
-                    <li class="notes__item">
-                        <a href="#" class="notes__link">Антифон 2. Глас 1</a>
-                    </li>
-                    <li class="notes__item">
-                        <a href="#" class="notes__link">Единородный Сыне.</a> Обиходное
+                        <details>
+                            <summary>Единородный Сыне</summary>
+                            <div class="cont-links">
+                                <p class="notes__text"><a href="#" class="notes__link">Единородный Сыне.</a> Обиходное</p>
+                            </div>
+                        </details>
                     </li>
                     <li class="notes__item">
                         <a href="#" class="notes__link">Антифон 3.</a> Московского напева
