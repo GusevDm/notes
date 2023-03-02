@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 500;
+
+    @media screen and (max-width: $phones) {
+        padding-top: 0;
+    }
+}

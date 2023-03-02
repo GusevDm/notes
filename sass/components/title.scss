@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: $color-title;
+
+    &--p {
+        font-size: 18px;
+        display: block;
+    }
+}
+
+.page-content .title {
+    color: #151515;
+}

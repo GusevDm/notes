@@ -1,0 +1,28 @@
+.links {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+    
+        .links__link {
+            font-weight: 300;
+            margin-left: 28px;
+            margin-top: 3px;
+            padding: 2 0;
+            display: flex;
+            align-items: center;
+            width: max-content;
+    
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                margin-right: 5px;
+                background: #3a3a3a;
+                display: inline-block;
+                border-radius: 50px;
+            }
+        }
+    }

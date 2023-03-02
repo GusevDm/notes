@@ -1,0 +1,31 @@
+.links__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.links .links__link {
+  font-weight: 300;
+  margin-left: 28px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.links .links__link::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  background: #3a3a3a;
+  display: inline-block;
+  border-radius: 50px;
+}
