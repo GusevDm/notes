@@ -16,6 +16,7 @@ body {
   height: 100%;
   font-weight: 300;
   color: #151515;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,7 +87,7 @@ summary {
   display: none;
   position: fixed;
   top: 0;
-  left: -20px;
+  left: 0;
   color: #fff;
   font-size: 16px;
 }
@@ -96,11 +97,6 @@ summary {
     padding: 20px 20px 20px 40px;
     border-radius: 0 0 20px 0;
     margin-left: -20px;
-  }
-}
-@media screen and (min-width: 481px) {
-  .wrapper-img .back {
-    padding: 20px;
   }
 }
 .wrapper-img .back--on {
@@ -243,7 +239,7 @@ summary {
   padding: 12px 33px 16px 33px;
 }
 .notes__item {
-  margin-top: 17px;
+  margin-top: 12px;
 }
 .notes__link {
   margin-right: 5px;
@@ -266,7 +262,7 @@ summary {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .notes-posled .cont-links {
   display: -webkit-box;
