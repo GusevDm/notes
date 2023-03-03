@@ -53,10 +53,18 @@ back.click(e => {
 
 $('#open').click(e => {
     if ($('#open').is(':checked')){
-        console.log('Включен');
         $('details').attr('open', '');
+        $('summary').addClass('summary--active');
     } else {
-        console.log('Выключен');
         $('details').removeAttr('open', '');
-    }    
+        $('summary').removeClass('summary--active');
+    }
+});
+
+$('summary').click(e => {
+    if ($(e.currentTarget).hasClass('summary--active')){
+        $(e.currentTarget).removeClass('summary--active');
+    } else {
+        $(e.currentTarget).addClass('summary--active');
+    }
 });

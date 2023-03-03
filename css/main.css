@@ -216,6 +216,9 @@ summary {
   list-style: none;
   cursor: pointer;
 }
+.notes .summary--active {
+  font-weight: 700;
+}
 .notes details summary::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
   display: none;
 }
