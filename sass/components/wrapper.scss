@@ -4,18 +4,15 @@
 
     &--none {
         display: none;
-    }
-
-    
+    }    
 }
 
 .wrapper-img {
     position: absolute;
     display: none;
-    padding-bottom: 52px;
+    padding-bottom: 76px;
     left: 0;
     right: 0;
-
 
     &--on {
         display: flex;
@@ -32,10 +29,13 @@
         left: 0;
         color: #151515;
         font-size: 16px;
-
         
-            
-    
+        
+
+        @media screen and (min-width: 481px) {
+            padding: 20px;
+        }
+        
         &--on {
             display: inline-block;
         }

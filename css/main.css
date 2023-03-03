@@ -69,7 +69,7 @@ summary {
 .wrapper-img {
   position: absolute;
   display: none;
-  padding-bottom: 52px;
+  padding-bottom: 76px;
   left: 0;
   right: 0;
 }
@@ -89,6 +89,11 @@ summary {
   left: 0;
   color: #151515;
   font-size: 16px;
+}
+@media screen and (min-width: 481px) {
+  .wrapper-img .back {
+    padding: 20px;
+  }
 }
 .wrapper-img .back--on {
   display: inline-block;
@@ -172,7 +177,7 @@ summary {
 }
 @media screen and (max-width: 480px) {
   .content {
-    padding: 35px 16px;
+    padding: 40px 16px;
   }
 }
 
@@ -198,6 +203,11 @@ summary {
   padding-top: 30px;
   font-size: 20px;
   color: #9f484c;
+}
+@media screen and (max-width: 480px) {
+  .notes__title {
+    padding-top: 40px;
+  }
 }
 .notes__title :first-child {
   padding-top: 20px;
@@ -338,6 +348,11 @@ summary {
           justify-content: center;
   background: #fff1f1;
 }
+@media screen and (max-width: 480px) {
+  .view {
+    margin-top: 30px;
+  }
+}
 
 button.view__button {
   padding: 0 10px;
@@ -433,6 +448,7 @@ button.view__button--active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5px;
 }
 
 .open-for {
