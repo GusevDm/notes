@@ -90,6 +90,7 @@ summary {
   left: 0;
   color: #fff;
   font-size: 16px;
+  opacity: 0.87;
 }
 @media (orientation: landscape) {
   .wrapper-img .back {
