@@ -51,8 +51,8 @@ back.click(e => {
 
 
 
-$('.open').click(e => {
-    if ($('.open').is(':checked')){
+$('#open').click(e => {
+    if ($('#open').is(':checked')){
         console.log('Включен');
         $('details').attr('open', '');
     } else {

@@ -50,6 +50,10 @@ a {
   will-change: transform;
 }
 
+::marker {
+  color: #5b5959;
+}
+
 .wrapper {
   max-width: 700px;
   margin: 0 auto;
@@ -74,7 +78,7 @@ a {
   width: 100%;
   text-align: center;
   background: #c7c7c7;
-  padding: 20px;
+  padding: 30px;
   display: none;
   position: fixed;
   bottom: 0;
@@ -198,6 +202,9 @@ a {
   list-style: none;
   cursor: pointer;
 }
+.notes details summary::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+  display: none;
+}
 .notes .cont-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,33 +213,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fefbfb;
-  padding: 12px;
+  background: #fdf2f2;
+  list-style: initial;
+  padding: 20px 33px;
 }
 .notes__item {
   margin-top: 12px;
 }
 .notes__link {
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-right: 5px;
-}
-.notes__link:first-child {
-  margin-top: 0;
-}
-.notes__link::before {
-  content: "";
-  display: block;
-  margin-right: 7px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50px;
-  background: #585858;
 }
 .notes__text {
   display: -webkit-box;
@@ -283,6 +272,13 @@ a {
   background: #3a3a3a;
   display: inline-block;
   border-radius: 50px;
+}
+
+.cont-links li {
+  margin-top: 12px;
+}
+.cont-links li:first-child {
+  margin-top: 0;
 }
 
 .text {
@@ -423,6 +419,15 @@ button.view__button--active {
   margin: 0 auto;
   text-align: center;
   margin-top: 2px;
+  font-size: 16px;
+  color: #515151;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .open-for {
@@ -430,4 +435,8 @@ button.view__button--active {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+input#open {
+  margin-right: 6px;
 }

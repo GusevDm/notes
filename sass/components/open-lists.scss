@@ -2,8 +2,17 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 2px;
+    font-size: 16px;
+    color: #515151;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
 
 .open-for {
     user-select: none;
+}
+
+input#open {
+    margin-right: 6px;
 }

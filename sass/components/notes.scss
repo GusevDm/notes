@@ -18,11 +18,15 @@
         cursor: pointer;
     }
 
+    details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+        display: none;
+      }
     .cont-links {
         display: flex;
         flex-direction: column;
-        background: #fefbfb;
-        padding: 12px;
+        background: #fdf2f2;
+        list-style: initial;
+        padding: 20px 33px;
     }
 
     &__item {
@@ -30,24 +34,17 @@
     }
 
     &__link {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
         margin-right: 5px;
 
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &::before {
-            content: '';
-            display: block;
-            margin-right: 7px;
-            width: 5px;
-            height: 5px;
-            border-radius: 50px;
-            background: #585858;
-        }
+        // &::before {
+        //     content: '';
+        //     display: block;
+        //     margin-right: 7px;
+        //     width: 5px;
+        //     height: 5px;
+        //     border-radius: 50px;
+        //     background: #585858;
+        // }
     }
 
 
@@ -91,5 +88,13 @@
             display: inline-block;
             border-radius: 50px;
         }
+    }
+}
+
+.cont-links li {
+    margin-top: 12px;
+
+    &:first-child {
+        margin-top: 0;
     }
 }

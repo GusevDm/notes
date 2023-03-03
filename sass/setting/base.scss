@@ -52,3 +52,7 @@ a {
     transition: transform .7s;
     will-change: transform;
  }
+
+ ::marker {
+    color: #5b5959;
+}
