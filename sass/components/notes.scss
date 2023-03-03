@@ -34,13 +34,13 @@
     .cont-links {
         display: flex;
         flex-direction: column;
-        background: #fdf2f2;
+        background: #fffbfb;
         list-style: initial;
-        padding: 20px 33px;
+        padding: 12px 33px 16px 33px;
     }
 
     &__item {
-        margin-top: 12px;
+        margin-top: 17px;
     }
 
     &__link {
@@ -80,6 +80,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 25px;
+        margin-bottom: 25px;
     }
 
     .notes__link {
