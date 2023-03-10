@@ -1,28 +1,24 @@
 let buttonPosled = $('.view__button-posled');
 let buttonList = $('.view__button-list');
-let notesPosled = $('.notes-posled');
-let notesList = $('.notes-list');
+let posledOpen = $('.posled-open');
 
 buttonPosled.click(e => {
     let thisBtn = $(e.currentTarget);
 
-    notesList.removeClass('notes--active');
-    notesPosled.addClass('notes--active');
+    posledOpen.addClass('posled-open--active');
 
-    buttonList.removeClass('view__button--active');
-    buttonPosled.addClass('view__button--active');
+    thisBtn.siblings().removeClass('view__button--active');
+    thisBtn.addClass('view__button--active');
 });
 
 buttonList.click(e => {
     let thisBtn = $(e.currentTarget);
 
-    notesPosled.removeClass('notes--active');
-    notesList.addClass('notes--active');
+    posledOpen.removeClass('posled-open--active');
 
-    buttonPosled.removeClass('view__button--active');
-    buttonList.addClass('view__button--active');
+    thisBtn.siblings().removeClass('view__button--active');
+    thisBtn.addClass('view__button--active');
 });
-
 
 
 

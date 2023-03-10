@@ -1,6 +1,6 @@
 .notes {
 
-    display: none;
+    display: block;
     padding-bottom: 20px;
 
     &__title {
@@ -9,13 +9,25 @@
         color: $color-title;
 
         @media screen and (max-width: $phones) {
-            padding-top: 40px;
+            padding-top: 30px;
         }
-
-        
 
         :first-child {
             padding-top: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-top: 12px;
+        color: #9f484c;
+
+        &--posled {
+            color: #151515;
         }
     }
 
@@ -23,89 +35,36 @@
         list-style: none;
         cursor: pointer;
     }
-
-    .summary--active {
-        font-weight: 700;
-    }
     
     details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
         display: none;
-      }
+    }
+
     .cont-links {
         display: flex;
         flex-direction: column;
         background: #fffbfb;
         list-style: initial;
         padding: 12px 33px 16px 33px;
-    }
 
-    &__item {
-        margin-top: 12px;
+        & li {
+            margin-top: 12px;
+        
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
 
     &__link {
         margin-right: 5px;
+    }    
+}
 
-        // &::before {
-        //     content: '';
-        //     display: block;
-        //     margin-right: 7px;
-        //     width: 5px;
-        //     height: 5px;
-        //     border-radius: 50px;
-        //     background: #585858;
-        // }
-    }
+.posled-open {
+    display: none;
 
-
-    &__text {
-        display: flex;
-    }
-    
     &--active {
-        display: block;
-    }
-}
-
-.notes-posled {
-
-    .notes__item {
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        margin-top: 12px;
-    }
-
-    .cont-links {
-        display: flex;
-        flex-direction: column;
-        margin-left: 25px;
-        margin-bottom: 25px;
-    }
-
-    .notes__link {
-        font-weight: 300;
-        margin-left: 28px;
-        margin-top: 5px;
-        display: flex;
-        align-items: center;
-
-        &::before {
-            content: "";
-            width: 5px;
-            height: 5px;
-            margin-right: 5px;
-            background: #3a3a3a;
-            display: inline-block;
-            border-radius: 50px;
-        }
-    }
-}
-
-.cont-links li {
-    margin-top: 12px;
-
-    &:first-child {
-        margin-top: 0;
+        display: inline;
     }
 }
