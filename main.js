@@ -6,6 +6,7 @@ buttonPosled.click(e => {
     let thisBtn = $(e.currentTarget);
 
     posledOpen.addClass('posled-open--active');
+    $('.notes__item--hor').css('color', '#9f484c');
 
     thisBtn.siblings().removeClass('view__button--active');
     thisBtn.addClass('view__button--active');
@@ -15,6 +16,7 @@ buttonList.click(e => {
     let thisBtn = $(e.currentTarget);
 
     posledOpen.removeClass('posled-open--active');
+    $('.notes__item--hor').css('color', '#151515');
 
     thisBtn.siblings().removeClass('view__button--active');
     thisBtn.addClass('view__button--active');
