@@ -6,7 +6,7 @@ buttonPosled.click(e => {
     let thisBtn = $(e.currentTarget);
 
     posledOpen.addClass('posled-open--active');
-    $('.notes__item--hor').css('color', '#9f484c');
+    $('.notes__item--hor').css('color', '#ff4a52');
 
     thisBtn.siblings().removeClass('view__button--active');
     thisBtn.addClass('view__button--active');
@@ -66,3 +66,11 @@ $('summary').click(e => {
         $(e.currentTarget).addClass('summary--active');
     }
 });
+
+window.addEventListener("load",function() {
+    // Set a timeout...
+    setTimeout(function(){
+      // Hide the address bar!
+      window.scrollTo(0, 1);
+    }, 0);
+  });

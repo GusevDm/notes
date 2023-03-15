@@ -227,12 +227,13 @@ summary {
           flex-direction: column;
 }
 .notes__item {
-  margin-top: 12px;
+  margin-top: 17px;
   color: #151515;
 }
 .notes summary {
   list-style: none;
   cursor: pointer;
+  display: inline-block;
 }
 .notes details summary::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
   display: none;
@@ -250,10 +251,10 @@ summary {
   padding: 12px 33px 16px 33px;
 }
 .notes .cont-links li {
-  margin-top: 12px;
+  margin-top: 17px;
 }
 .notes .cont-links li:first-child {
-  margin-top: 0;
+  margin-top: 3px;
 }
 .notes__link {
   margin-right: 5px;
